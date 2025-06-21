@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Snake Game</h1>
+
+  <div id="progressBarContainer">
+    <div id="progressBar"></div>
+  </div>
+
+  <select id="levelSelect">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+  <button onclick="startGame()">Start Game</button>
+
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+  <div class="controls">
+    <button onclick="setDirection('up')">↑</button>
+    <div>
+      <button onclick="setDirection('left')">←</button>
+      <button onclick="pauseGame()">⏸</button>
+      <button onclick="setDirection('right')">→</button>
+    </div>
+    <button onclick="setDirection('down')">↓</button>
+  </div>
+
+  <script src="free-sky.js"></script>
+</body>
+</html>
