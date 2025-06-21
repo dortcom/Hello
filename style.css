@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 15px;
+}
+
+canvas {
+  background: black;
+  border: 2px solid white;
+  display: block;
+  margin: 20px auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 22px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#progressBarContainer {
+  width: 400px;
+  height: 15px;
+  background-color: #444;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background-color: limegreen;
+  transition: width 0.3s ease;
+}
